@@ -1,0 +1,25 @@
+# docker-compose.yml
+version: '3.8'
+
+services:
+  a2a-agent:
+    build:
+      context: .
+      dockerfile: Dockerfile.agent
+    ports:
+      - "10000:10000"
+    env_file:
+      - .env
+    restart: unless-stopped
+
+  streamlit-ui:
+    build:
+      context: .
+      dockerfile: Dockerfile.streamlit
+    ports:
+      - "8501:8501"
+    env_file:
+      - .env
+    restart: unless-stopped
+    depends_on:
+      - a2a-agent

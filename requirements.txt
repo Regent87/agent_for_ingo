@@ -1,0 +1,13 @@
+# A2A server dependencies
+a2a-sdk[http-server]
+langgraph
+langchain-openai
+langchain-community
+ddgs  # ← ДОБАВЬТЕ ЭТУ СТРОКУ
+python-dotenv
+uvicorn
+click
+
+# Streamlit UI
+streamlit
+httpx
