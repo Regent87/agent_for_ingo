@@ -3,7 +3,8 @@ a2a-sdk[http-server]
 langgraph
 langchain-openai
 langchain-community
-ddgs  # ← ДОБАВЬТЕ ЭТУ СТРОКУ
+
+duckduckgo_search
 python-dotenv
 uvicorn
 click
