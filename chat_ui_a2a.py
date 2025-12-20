@@ -3,9 +3,11 @@ import streamlit as st
 import httpx
 from uuid import uuid4
 from a2a.types import MessageSendParams, SendMessageRequest
+import os
 
 # URL вашего A2A-агента
-A2A_AGENT_URL = "http://localhost:10000"
+#A2A_AGENT_URL = "http://localhost:10000"
+A2A_AGENT_URL = os.getenv("A2A_AGENT_URL", "http://localhost:10000")
 
 st.set_page_config(page_title="A2A Agent Chat", page_icon="🔌", layout="centered")
 st.title("🔌 A2A Agent Chat (with memory)")

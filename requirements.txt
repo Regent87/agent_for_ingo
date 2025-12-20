@@ -5,6 +5,7 @@ langchain-openai
 langchain-community
 
 duckduckgo_search
+ddgs
 python-dotenv
 uvicorn
 click

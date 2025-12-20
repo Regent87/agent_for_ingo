@@ -23,7 +23,7 @@ logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
 @click.command()
-@click.option('--host', default='localhost')
+@click.option('--host', default='0.0.0.0')
 @click.option('--port', default=10000)
 def main(host, port):
     # Проверка API-ключа (опционально)
